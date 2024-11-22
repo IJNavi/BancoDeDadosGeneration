@@ -1,15 +1,13 @@
 CREATE DATABASE db_empresa;
 USE db_empresa;
 CREATE TABLE tb_colaboradores(
-id				BIGINT auto_increment,
+id				BIGINT AUTO_INCREMENT,
 nome 			VARCHAR(255),
 data_inicio		DATE,
 salario			DECIMAL(8,2) NOT NULL,
 cargos			VARCHAR(255),
 PRIMARY KEY		(id)
 );
-
-SELECT * FROM tb_colaboradores;
 
 INSERT INTO tb_colaboradores (nome, data_inicio, salario, cargos)
 VALUES("Keven Martineli Torres", "2024-01-13", 1900.25, "desenvolvedor júnior 1"),
