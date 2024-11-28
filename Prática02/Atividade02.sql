@@ -55,7 +55,7 @@ SELECT p.id_pizza, p.nome_pizza, p.valor, p.ingredientes, p.tamanho, c.nome_cate
 FROM tb_pizzas p
 INNER JOIN tb_categorias c ON p.id_categoria = c.id_categoria;
 
--- SELECT utilizando INNER JOIN, trazendo apenas as pizzas que pertencem a uma categoria específica (exemplo: Doce)
+-- SELECT utilizando INNER JOIN, trazendo apenas as pizzas que pertencem a categoria Doce:
 SELECT p.id_pizza, p.nome_pizza, p.valor, p.ingredientes, p.tamanho, c.nome_categoria
 FROM tb_pizzas p
 INNER JOIN tb_categorias c ON p.id_categoria = c.id_categoria

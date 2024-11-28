@@ -52,7 +52,7 @@ SELECT p.id_produto, p.nome_produto, p.valor, p.fabricante, p.validade, c.nome_c
 FROM tb_produtos p
 INNER JOIN tb_categorias c ON p.id_categoria = c.id_categoria;
 
--- SELECT utilizando INNER JOIN, trazendo apenas os produtos que pertencem a uma categoria específica (exemplo: Cosméticos)
+-- SELECT utilizando INNER JOIN, trazendo apenas os produtos que pertencem a categoria Cosméticos.
 SELECT p.id_produto, p.nome_produto, p.valor, p.fabricante, p.validade, c.nome_categoria
 FROM tb_produtos p
 INNER JOIN tb_categorias c ON p.id_categoria = c.id_categoria
